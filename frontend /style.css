@@ -1,65 +1,132 @@
-/* style.css */
-
+/* =======================
+   🌐 Base Styles (Shared)
+========================== */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background-color: #1e1e1e;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 170, 0.2);
-    width: 90%;
-    max-width: 500px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="file"],
-  textarea {
-    padding: 0.6rem;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background-color: #2e2e2e;
-    color: white;
-  }
-  
-  button {
-    margin-top: 1.5rem;
-    padding: 0.8rem;
-    background-color: #00ffaa;
-    color: black;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #00cc88;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =======================
+   🚀 Landing Page Styles
+========================== */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #1e1e1e;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #00ffaa;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00cc88;
+}
+
+.about, .steps {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.steps .step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* =======================
+   📝 Report Page Styles
+========================== */
+.report-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.2);
+  width: 90%;
+  max-width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: #00ffaa;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cc88;
+}
